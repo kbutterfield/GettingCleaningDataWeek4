@@ -22,12 +22,12 @@ unzips it to a local directory.
 
 6) Assign the descriptive activity names to name the activities in the data set.
 
-7) Creates a new dataset named TinyData.txt which contatins the average for each variable for each activity and subject.
+7) Creates a new dataset named TinyDataFin.txt which contatins the average for each variable for each activity and subject.
 
-8) Writes the TinyData.txt data to the local computer.  This data file was them comitted to this repository.
+8) Writes the TinyDataFin.txt data to the local computer.  This data file was them comitted to this repository.
 
 
-The codebook for the TinyData.txt dataset is located in this repository in the CODEBOOK.MD file.
+The codebook for the TinyDataFin.txt dataset is located in this repository in the CODEBOOK.MD file.
 
 
 
