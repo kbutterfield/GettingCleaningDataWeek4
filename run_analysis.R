@@ -52,25 +52,21 @@ meanstd <- (grepl("activityId" , colnames) |
                  grepl("mean.." , colnames) | 
                  grepl("std.." , colnames) 
                  )
-meanstd <- AllData[ , meanstd == TRUE]
+meanstd2 <- AllData[ , meanstd == TRUE]
 
 #5.Descriptive activity names to name the activities in the data set
 
-ActivityNames <- merge(meanstd, activityLabels,
-                              by='activityId',
-                              all.x=TRUE)
 
-
+ActivityNames <- merge(meanstd2,activityLabels,by="activityId")
 
 #6. Create a second, independent tidy data set with the average of each variable for each activity and each subject
 
 
-TidyData <- aggregate(. ~subjectId + activityId, ActivityNames, mean)
-TidyData <- TidyData[order(TidyData$subjectId, TidyData$activityId),]
+TidyData <- aggregate(. ~subjectId + activityType, ActivityNames, mean)
+TidyData <- TidyData[order(TidyData$subjectId, TidyData$activityType),]
 
 #7. Write to Text File
 
-write.table(TidyData, "TidyData.txt", row.name=FALSE)
-
+write.table(TidyData, "TidyDataFin.txt", row.name=FALSE)
 
 
