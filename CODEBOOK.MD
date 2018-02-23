@@ -1,6 +1,6 @@
-This CODEBOOK.MD file describes the varaible names and attributes of the TinyDataFin.txt dataset.
+This CODEBOOK.MD file describes the varaible names and attributes of the TidyDataFin.txt dataset.
 
-The TinyDataFin.txt file contains 180 rows and 82 columns.
+The TidyDataFin.txt file contains 180 rows and 82 columns.
 
 30 subjects are included in the dataset, with the variable name SubjectID 1-30.
 
